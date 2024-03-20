@@ -43,3 +43,26 @@ Wed 20 Mar 2024 08:29:37 PM UTC:
  tests:  2|3
 total_score: 20/70
 ab000b2
+Wed 20 Mar 2024 08:41:42 PM UTC: 
+ exercises.c | 18 ++++++++++++++----
+ 1 file changed, 14 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:105:3: error: unknown type name ‘dato’
+  105 |   dato* dato = top(P1);
+      |   ^~~~
+exercises.c:106:3: error: statement with no effect [-Werror=unused-value]
+  106 |   P3
+      |   ^~
+exercises.c:106:5: error: expected ‘;’ before ‘}’ token
+  106 |   P3
+      |     ^
+      |     ;
+  107 | }
+      | ~    
+exercises.c:105:9: error: unused variable ‘dato’ [-Werror=unused-variable]
+  105 |   dato* dato = top(P1);
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f07b335

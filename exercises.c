@@ -80,10 +80,17 @@ de la lista que sean iguales a elem.
 Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
-
 void eliminaElementos(List*L, int elem)
- {
-
+{
+  int* number = first(L);
+  while (number != NULL)
+  {
+    if (*number == elem)
+    {
+      popCurrent(L);
+    }
+    number = next(L);
+  }
 }
 
 /*
@@ -92,8 +99,11 @@ La función copia los punteros de la pila P1 en la pila P2.
 El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
-
-void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2) 
+{
+  Stack* P3 = create_stack();
+  dato* dato = top(P1);
+  P3 
 }
 
 /*
