@@ -107,3 +107,15 @@ exercises.c:106:15: error: ‘dato’ is used uninitialized [-Werror=uninitializ
 cc1: all warnings being treated as errors
 Compilation failed
 7b33b6f
+Wed 20 Mar 2024 08:53:18 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:106:10: error: dereferencing ‘void *’ pointer [-Werror]
+  106 |   while (*dato != NULL)
+      |          ^~~~~
+exercises.c:106:10: error: void value not ignored as it ought to be
+cc1: all warnings being treated as errors
+Compilation failed
+ad9fc28
