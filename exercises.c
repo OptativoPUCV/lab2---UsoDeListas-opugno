@@ -64,9 +64,9 @@ int sumaLista(List *L)
 {
   int suma = 0;
   int* numero = first(L);
-  while(numero != NULL)
+  while (numero != NULL)
   {
-    suma += numero;
+    suma += *numero;
     next(L);
   }
   return suma;
@@ -81,7 +81,8 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-void eliminaElementos(List*L, int elem){
+void eliminaElementos(List*L, int elem)
+ {
 
 }
 
