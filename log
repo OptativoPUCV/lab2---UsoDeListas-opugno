@@ -1,0 +1,10 @@
+Wed 20 Mar 2024 08:20:25 PM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:50:37: error: expected expression before ‘)’ token
+   50 |     int* dato = (int*) malloc(sizeof);
+      |                                     ^
+Compilation failed
+24f3a0c
