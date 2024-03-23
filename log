@@ -959,3 +959,21 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 25fbe13
+Sat 23 Mar 2024 11:03:39 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:143:23: error: initialization of ‘char’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  143 |       char caracter = top(pila);
+      |                       ^~~
+exercises.c:148:50: error: expected expression before ‘||’ token
+  148 |         if (cadena[i] == ')' && caracter == '(') || (cadena[i] == ']' && caracter == '[') || (cadena[i] == '}' && caracter == '{')
+      |                                                  ^~
+In file included from test.c:5:
+exercises.c:159:2: error: control reaches end of non-void function [-Werror=return-type]
+  159 | }}
+      |  ^
+cc1: all warnings being treated as errors
+Compilation failed
+cafdcda
