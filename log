@@ -119,3 +119,14 @@ exercises.c:106:10: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 ad9fc28
+Sat 23 Mar 2024 05:49:13 PM UTC: 
+ exercises.c | 17 ++++++++++++-----
+ 1 file changed, 12 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:10: error: unused variable ‘pila’ [-Werror=unused-variable]
+  129 |   Stack* pila = create_stack();
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+655d579
