@@ -135,20 +135,25 @@ int parentesisBalanceados(char *cadena)
   {
     if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
     {
-      push(pila, cadena[i]);
+      push(pila, &cadena[i]);
     }
 
-    if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
+    else if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
     {
-      char* caracter = top(pila);
-      if (caracter == NULL)
+      char caracter = top(pila);
+      if (caracter == '\0')
         return 0;
       else
       {
-        if (cadena[i] == ')' && *caracter == '(') || (cadena[i] == ']' && *caracter == '[') || (cadena[i] == '
+        if (cadena[i] == ')' && caracter == '(') || (cadena[i] == ']' && caracter == '[') || (cadena[i] == '}' && caracter == '{')
+        { 
           return 0;
-        if (caracter == NULL) return 1;
+        }
+        pop(pila);
       }
     }
-  return pila; 
+  if (pila != NULLL) 
+    return 0;
+
+  return 1;
 }
