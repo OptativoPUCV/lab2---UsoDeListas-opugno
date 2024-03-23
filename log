@@ -1211,3 +1211,17 @@ exercises.c:143:23: error: initialization of ‘char’ from ‘void *’ makes 
 cc1: all warnings being treated as errors
 Compilation failed
 7756956
+Sat 23 Mar 2024 11:14:39 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:144:20: error: comparison between pointer and zero character constant [-Werror=pointer-compare]
+  144 |       if (caracter == '\0')
+      |                    ^~
+exercises.c:144:11: note: did you mean to dereference the pointer?
+  144 |       if (caracter == '\0')
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+743977c
