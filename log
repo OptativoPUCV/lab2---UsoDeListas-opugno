@@ -130,3 +130,14 @@ exercises.c:129:10: error: unused variable ‘pila’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 655d579
+Sat 23 Mar 2024 05:49:53 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:10: error: unused variable ‘pila’ [-Werror=unused-variable]
+  129 |   Stack* pila = create_stack();
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d9eb2e9
