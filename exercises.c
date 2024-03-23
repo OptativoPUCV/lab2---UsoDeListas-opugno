@@ -82,7 +82,8 @@ posiciona en el elemento anterior.
 */
 void eliminaElementos(List*L, int elem)
 {
-  int* number = (int*)first(L);
+  int* number;
+  number = (int*)first(L);
   while (number != NULL)
   {
     if (*number == elem)
@@ -142,7 +143,7 @@ int parentesisBalanceados(char *cadena)
         if (cadena[i] == top(pila))
       }
     }
-  }
+  }*/
    return 0;
-*/
+
 }
