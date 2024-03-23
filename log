@@ -475,3 +475,19 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 bab22e3
+Sat 23 Mar 2024 09:22:47 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:109:14: error: dereferencing ‘void *’ pointer [-Werror]
+  109 |     push(P3, *dato);
+      |              ^~~~~
+exercises.c:109:14: error: invalid use of void expression
+exercises.c:116:14: error: dereferencing ‘void *’ pointer [-Werror]
+  116 |     push(P2, *copia);
+      |              ^~~~~~
+exercises.c:116:14: error: invalid use of void expression
+cc1: all warnings being treated as errors
+Compilation failed
+492a994
