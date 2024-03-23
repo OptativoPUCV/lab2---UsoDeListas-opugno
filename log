@@ -1225,3 +1225,14 @@ exercises.c:144:11: note: did you mean to dereference the pointer?
 cc1: all warnings being treated as errors
 Compilation failed
 743977c
+Sat 23 Mar 2024 11:17:20 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:143:23: error: initialization of ‘char’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  143 |       char caracter = top(pila);
+      |                       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+555497e
