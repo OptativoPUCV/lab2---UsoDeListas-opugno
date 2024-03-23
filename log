@@ -141,3 +141,17 @@ exercises.c:129:10: error: unused variable ‘pila’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d9eb2e9
+Sat 23 Mar 2024 08:07:42 PM UTC: 
+ exercises.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:142:23: error: comparison between pointer and integer [-Werror]
+  142 |         if (cadena[i] == top(pila))
+      |                       ^~
+exercises.c:143:7: error: expected expression before ‘}’ token
+  143 |       }
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+998a7c6
