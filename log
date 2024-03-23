@@ -427,3 +427,17 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 12dfef0
+Sat 23 Mar 2024 08:39:15 PM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:108:15: error: ‘dato’ is used uninitialized [-Werror=uninitialized]
+  108 |   while (dato != NULL)
+      |               ^
+exercises.c:116:16: error: ‘copia’ is used uninitialized [-Werror=uninitialized]
+  116 |   while (copia != NULL)
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+da0956e
