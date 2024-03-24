@@ -1242,3 +1242,24 @@ Sat 23 Mar 2024 11:52:24 PM UTC:
  tests:  4|1
 total_score: 50/70
 9f99308
+Sun 24 Mar 2024 12:05:29 AM UTC: 
+ exercises.c | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:138:63: error: value computed is not used [-Werror=unused-value]
+  138 |       else (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
+      |                                                     ~~~~~~~~~~^~~~~~
+exercises.c:138:70: error: expected ‘;’ before ‘{’ token
+  138 |       else (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
+      |                                                                      ^
+      |                                                                      ;
+  139 |       {
+      |       ~                                                               
+exercises.c:146:33: error: ‘primero’ undeclared (first use in this function)
+  146 |       if ((cadena[i] == ')' && *primero == '(') || (cadena[i] == ']' && *primero == '[') || (cadena[i] == '}' && *primero == '{'))
+      |                                 ^~~~~~~
+exercises.c:146:33: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+70f447f
