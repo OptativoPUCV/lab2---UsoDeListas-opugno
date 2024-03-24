@@ -1289,3 +1289,9 @@ exercises.c:146:9: note: ...this statement, but the latter is misleadingly inden
 cc1: all warnings being treated as errors
 Compilation failed
 c0134b9
+Sun 24 Mar 2024 01:33:34 AM UTC: 
+ exercises.c | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+ tests:  9|0
+total_score: 70/70
+b98ccbf

@@ -129,30 +129,34 @@ int parentesisBalanceados(char *cadena)
   
   for (int i = 0; i < strlen(cadena); i++)
   {
-    while(cadena[i] != '\0')
+    if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
     {
-      if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
-      {
-        push(pila, &cadena[i]);
-      }
-      else 
-        if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
-        {
-          if(top(pila) == NULL)
-          {
-            return 0;
-          }
-        }
-        char* primero = (char*) top(pila);
-        if ((cadena[i] == ')' && *primero == '(') || (cadena[i] == ']' && *primero == '[') || (cadena[i] == '}' && *primero == '{'))
-        {
-          pop(pila);
-        }
-        else return 0;
+      push(pila, &cadena[i]);
     }
+    else
+    {
+      if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
+      {
+        if (top(pila) == NULL)
+        {
+          return 0;
+        }
+      }
+      char* primero = (char*) pop(pila);
+      if ((cadena[i] == ')' && *primero != '(') || (cadena[i] == ']' && *primero != '[') || (cadena[i] == '}' && *primero != '{'))
+      {
+        free(pila);
+        return 0;
+      }
+    } 
   }
   
-  if (top(pila) == NULL) 
-    return 1;
-  else return 0;
+  if (top(pila) != NULL) 
+  {
+    free(pila);
+    return 0;
+  }
+
+  free(pila);
+  return 1;
 }
