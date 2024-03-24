@@ -1277,3 +1277,15 @@ exercises.c:146:9: note: ...this statement, but the latter is misleadingly inden
 cc1: all warnings being treated as errors
 Compilation failed
 809294f
+Sun 24 Mar 2024 12:12:26 AM UTC: 
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:138:7: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+  138 |       else
+      |       ^~~~
+exercises.c:146:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+  146 |         char* primero = (char*) top(pila);
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c0134b9
